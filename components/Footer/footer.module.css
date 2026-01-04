@@ -1,0 +1,139 @@
+/* Importing Google font - Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+.footer {
+  background: #111624;
+  max-width: 100%;
+  padding: 60px;
+}
+
+.footer ul {
+  padding-left: 0;
+}
+
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+}
+
+.footer-row .footer-col h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.footer-col .links {
+  margin-top: 20px;
+}
+
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
+.footer-col .links li a:hover {
+  color: #fff;
+}
+
+.footer-col p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #7489C6;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+  color: #ccc;
+}
+
+.footer-col form button {
+  background: #7489C6;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.footer-col form button:hover {
+  background: #596c98;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.footer-col .icons i {
+  color: #afb6c7;
+  transition: color 0.2s ease;
+}
+
+.footer-col .icons i:hover {
+  color: #fff;
+}
+
+.copy-right-footer {
+  text-align: center;
+  background: #92939c;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .footer .footer-row {
+    gap: 1rem;
+  }
+
+  .footer-col form {
+    display: block;
+  }
+
+  .footer-col form input, .footer-col form button {
+    width: 100%;
+  }
+
+  .footer-col form button {
+    margin-top: 10px;
+  }
+}
+
+.copy-right-footer{
+    text-align: center;
+    background: #92939c;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 10px;
+  }
