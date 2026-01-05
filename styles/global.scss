@@ -17,7 +17,7 @@ body{
   background-color: white; // Ensures the background remains visible
   z-index: 1000; // Ensures it stays above other content
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  font-size: 18px;
+  font-size: 14px;
   .container{
     padding-right: 0px !important;
      max-width: 1500px;
@@ -110,7 +110,7 @@ body{
 
       .card-image {
          padding: 10px;
-        width:  370px; /* Fixed image width */
+        width:  300px; /* Fixed image width */
         height: 450px; /* Fixed image height */
         border-radius: 10px;
         // object-fit: cover;
