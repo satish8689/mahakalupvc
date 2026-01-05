@@ -12,6 +12,32 @@ const Footer = () => {
                 Delivering premium UPVC solutions that combine durability, elegance,
                 and innovation to enhance modern living spaces.
               </p>
+
+              <div className="social-icons">
+                <a
+                  href="tel:+919067446328"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="/icon/phone.png" alt="Phone" width={"40px"}/>
+                </a>
+                <a
+                  href="https://wa.me/919067446328"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="/icon/whatsapp-white-icon.png" alt="WhatsApp" />
+                </a>
+
+                <a
+                  href="https://www.instagram.com/mahakalupvc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="/icon/instagram.png" alt="Instagram" />
+                </a>
+              </div>
+
             </div>
 
             <div className="footer-links">
@@ -28,7 +54,7 @@ const Footer = () => {
             <div className="footer-contact">
               <h4>Contact Info</h4>
               <p>
-                45, Kailash Park, Behind Geetabhawan Mandir<br />
+                P-110, Kalindi Gold City, Bhangiya<br />
                 Indore – 452001, Madhya Pradesh
               </p>
               <p>

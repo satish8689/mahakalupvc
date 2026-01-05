@@ -21,41 +21,49 @@ const Slider = () => {
         <div className="carousel-item active">
           <img src="/banner/1.jpg" className="banner-img d-block w-100" alt="..." />
           <div className="carousel-caption d-none d-md-block">
-            <h5>TMP Universal Journal of Advances in Pharmaceutical Sciences</h5>
-            {/* <h4>Find Your Perfect Match</h4>
-            <p>Some representative placeholder content for the second slide.</p> */}
+            <h5>Premium UPVC Windows</h5>
+            <h4>Strength Meets Elegance</h4>
+            <p>Durable, weather-resistant, and energy-efficient solutions.</p>
           </div>
         </div>
         <div className="carousel-item">
           <img src="/banner/2.jpg" className="banner-img d-block w-100" alt="..." />
           <div className="carousel-caption d-none d-md-block">
-            <h5>TMP Universal Journal of Medical Research and Surgical Techniques</h5>
-            {/* <h4>Discover Your Next Must-Have</h4>
-            <p>Some representative placeholder content for the second slide.</p> */}
+            <h5>Modern UPVC Doors</h5>
+            <h4>Secure & Stylish Living</h4>
+            <p>High insulation and long-lasting performance.</p>
           </div>
         </div>
         <div className="carousel-item">
           <img src="/banner/3.jpg" className="banner-img d-block w-100" alt="..." />
           <div className="carousel-caption d-none d-md-block">
-            <h5>TMP Universal Journal of Dental Research and Health</h5>
-            {/* <h4>Discover Your Next Must-Have</h4>
-            <p>Some representative placeholder content for the second slide.</p> */}
+            <h5>Custom UPVC Furniture</h5>
+            <h4>Designed for Comfort</h4>
+            <p>Perfect fit for homes, offices, and commercial spaces.</p>
           </div>
         </div>
         <div className="carousel-item">
           <img src="/banner/4.jpg" className="banner-img d-block w-100" alt="..." />
           <div className="carousel-caption d-none d-md-block">
-            <h5>TMP Universal Journal of Research and Review Archives</h5>
-            {/* <h4>Discover Your Next Must-Have</h4>
-            <p>Some representative placeholder content for the second slide.</p> */}
+            <h5>Sliding UPVC Systems</h5>
+            <h4>Smooth & Silent Operation</h4>
+            <p>Maximize ventilation with modern sliding designs.</p>
           </div>
         </div>
         <div className="carousel-item">
           <img src="/banner/5.webp" className="banner-img d-block w-100" alt="..." />
           <div className="carousel-caption d-none d-md-block">
-            <h5>TMP Universal Journal of Law, Business, and Management</h5>
-            {/* <h4>Get Ready to Be Amazed</h4>
-            <p>Some representative placeholder content for the second slide.</p> */}
+            <h5>Office UPVC Solutions</h5>
+            <h4>Professional & Practical</h4>
+            <p>Low maintenance with premium finishing.</p>
+          </div>
+        </div>
+        <div className="carousel-item">
+          <img src="/banner/5.webp" className="banner-img d-block w-100" alt="..." />
+          <div className="carousel-caption d-none d-md-block">
+            <h5>UPVC Interior Designs</h5>
+            <h4>Smart Living Spaces</h4>
+            <p>Elegant interiors with long-term durability.</p>
           </div>
         </div>
       </div>

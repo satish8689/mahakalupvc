@@ -137,7 +137,7 @@ const Content = ({ activeSection }) => {
         </div>
       </div>}
 
-      {activeSection === "home" && <div className="key-features">
+      {(activeSection === "home" || activeSection === "features") && <div className="key-features">
         <div className="key-features-container">
 
           <div className="section-header">
@@ -155,7 +155,7 @@ const Content = ({ activeSection }) => {
           <div className="features-grid">
 
             <div className="feature-card">
-              <img src="/icons/waterproof.png" alt="Water Proof" />
+              <img className="waterproof" src="/icon/waterproof-removebg-preview.png" alt="Water Proof" />
               <h3>Water Resistant</h3>
               <p>
                 Designed to withstand moisture and humidity, UPVC furniture remains
@@ -165,7 +165,7 @@ const Content = ({ activeSection }) => {
             </div>
 
             <div className="feature-card">
-              <img src="/icons/budget.png" alt="Budget Friendly" />
+              <img className="cost-effective" src="/icon/cost-effective-removebg-preview.png" alt="Budget Friendly" />
               <h3>Cost Effective</h3>
               <p>
                 UPVC offers an affordable alternative to wood, tiles, and paint,
@@ -175,7 +175,7 @@ const Content = ({ activeSection }) => {
             </div>
 
             <div className="feature-card">
-              <img src="/icons/allround.png" alt="All Round Product" />
+              <img className="product-vector" src="/icon/product-vector-removebg-preview.png" alt="All Round Product" />
               <h3>Versatile Application</h3>
               <p>
                 Suitable for wardrobes, modular kitchens, wall panels, ceilings, and
@@ -184,7 +184,7 @@ const Content = ({ activeSection }) => {
             </div>
 
             <div className="feature-card">
-              <img src="/icons/maintenance.png" alt="Low Maintenance" />
+              <img className="maintenance" src="/icon/all-maintenance-removebg-preview.png" alt="Low Maintenance" />
               <h3>Low Maintenance</h3>
               <p>
                 The smooth surface prevents dust buildup and stains, requiring only
@@ -193,7 +193,7 @@ const Content = ({ activeSection }) => {
             </div>
 
             <div className="feature-card">
-              <img src="/icons/recycle.png" alt="Recyclable" />
+              <img className="recycling" src="/icon/black-recycling-removebg-preview.png" alt="Recyclable" />
               <h3>Eco-Friendly</h3>
               <p>
                 UPVC panels are fully recyclable and reusable, allowing easy
@@ -203,7 +203,7 @@ const Content = ({ activeSection }) => {
             </div>
 
             <div className="feature-card">
-              <img src="/icons/hygienic.png" alt="Hygienic" />
+              <img className="healthcare" src="/icon/healthcare-removebg-preview.png" alt="Hygienic" />
               <h3>Hygienic & Safe</h3>
               <p>
                 With mold-resistant and antibacterial properties, UPVC ensures a clean,
