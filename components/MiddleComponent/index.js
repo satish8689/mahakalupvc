@@ -1,12 +1,21 @@
 import React from 'react';
 import ExploreProduct from '../ExploreProduct';
+import Products from '../Products';
 
 const Content = ({ activeSection }) => {
 
-  console.log("activeSection", activeSection)
   return (
     <div className="row middle-component">
       {activeSection === "home" && <div className="upvc-experts">
+        <div className="safeupvc">
+          <div className="marquee">
+            <span>
+              🌱 UPVC furniture is resistant to termites and cockroaches, does not get damaged by water, and remains durable for a long time. Compared to wooden furniture, it helps prevent tree cutting, thereby protecting the environment. 🌱
+              &nbsp;&nbsp;|&nbsp;&nbsp;
+              UPVC फर्नीचर में दीमक और कॉकरोच नहीं लगते, यह पानी से खराब नहीं होता और लंबे समय तक टिकाऊ रहता है। लकड़ी के फर्नीचर के मुकाबले यह पेड़ों की कटाई को रोकने में मदद करता है, जिससे पर्यावरण सुरक्षित रहता है। 🌱
+            </span>
+          </div>
+        </div>
         <div className="upvc-container">
 
           {/* LEFT CONTENT */}
@@ -35,9 +44,14 @@ const Content = ({ activeSection }) => {
 
           {/* RIGHT IMAGE */}
           <div className="upvc-image">
-            <img src="/web-img/kitchen-img-1.jpg" alt="UPVC Window" />
-            <img src="/web-img/kitchen-img-2.jpg" alt="UPVC Door" />
-            <img src="/web-img/kitchen-img-3.jpg" alt="UPVC Slider" />
+            <img src="/web-img/1 (1).jpg" alt="UPVC Window" /> 
+            <img src="/web-img/1 (3).jpg" alt="UPVC Slider" /> 
+            <img src="/web-img/1 (4).jpg" alt="UPVC Slider" /> 
+            <img src="/web-img/1 (5).jpg" alt="UPVC Slider" /> 
+            <img src="/web-img/1 (6).jpg" alt="UPVC Slider" /> 
+            <img src="/web-img/1 (7).jpg" alt="UPVC Door" /> 
+            <img src="/web-img/1 (8).jpg" alt="UPVC Door" /> 
+
           </div>
 
         </div>
@@ -48,7 +62,7 @@ const Content = ({ activeSection }) => {
         <div className='explore-products'> <ExploreProduct /></div>
       </div>}
 
-        {activeSection === "home" && <div className="why-choose-mahakal">
+      {activeSection === "home" && <div className="why-choose-mahakal">
         <div className="why-container">
 
           <div className="why-header">
@@ -57,7 +71,7 @@ const Content = ({ activeSection }) => {
               Why Choose <span>Mahakal UPVC</span>
             </h2>
             <p className="why-description">
-              At Mahakal Mahakal, we combine craftsmanship, innovation, and reliability
+              At Mahakal, we combine craftsmanship, innovation, and reliability
               to deliver UPVC solutions that elevate spaces with lasting beauty and
               unmatched performance.
             </p>
@@ -214,7 +228,7 @@ const Content = ({ activeSection }) => {
           </div>
         </div>
       </div>}
-    
+
 
 
       {activeSection === "about" && <div className="about-us">
@@ -228,7 +242,7 @@ const Content = ({ activeSection }) => {
             </h2>
 
             <p className="about-text">
-              Mahakal Mahakal is a trusted name in premium UPVC solutions, dedicated to
+              Mahakal is a trusted name in premium UPVC solutions, dedicated to
               transforming living and working spaces with innovation, durability, and
               refined design. Our journey is driven by a passion for quality and a
               commitment to delivering products that stand the test of time.
@@ -290,10 +304,18 @@ const Content = ({ activeSection }) => {
               <div className="info-item">
                 <h4>Our Location</h4>
                 <p>
-                  Twisting Memoirs Publication<br />
-                  45, Kailash Park, Behind Geetabhawan Mandir<br />
-                  Indore – 452001, Madhya Pradesh, India
+                  P-110, Kalindi Gold City, Bhangiya<br />
+                  Indore – 452001, Madhya Pradesh
                 </p>
+                <a
+                  href="https://www.google.com/maps/dir/Indore,+Madhya+Pradesh/22.7922745,75.8621953/@22.7923545,75.8619538,19z/data=!4m9!4m8!1m5!1m1!1s0x3962fcad1b410ddb:0x96ec4da356240f4!2m2!1d75.8577258!2d22.7195687!1m0!3e0?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#454141ff", textDecoration: "none", fontWeight: "600" }}
+                >
+                  📍 Get Directions
+                  <br />
+                </a>
               </div>
 
               <div className="info-item">
@@ -311,6 +333,7 @@ const Content = ({ activeSection }) => {
                   <a href="tel:+919067446328">
                     +91 90674 46328
                   </a>
+                  <a href="tel:+919752929902">+91 9752929902</a>
                 </p>
               </div>
             </div>
@@ -327,7 +350,7 @@ const Content = ({ activeSection }) => {
         </div>
       </div>}
 
-
+      {activeSection ==="products" && <Products/>}
 
     </div>
   );

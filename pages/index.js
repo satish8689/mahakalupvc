@@ -18,7 +18,7 @@ setActiveSection(activeSection)
         <div className="furniture-app">
             <Header setActiveSection={setActiveSection} />
             {activeSection === 'home' && <Slider />}
-            <MiddleComponent activeSection={activeSection} />
+            <MiddleComponent activeSection={activeSection} setActiveSection={setActiveSection} />
             {/* <MiddleComponent/> */}
             {/* <WhyChooseUs /> */}
             <Footer />

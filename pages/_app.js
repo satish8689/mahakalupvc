@@ -7,7 +7,8 @@ import '../styles/global.scss'; // Global CSS
 import '../styles/slider.scss'
 import '../styles/bootstrap.min.css'; // Bootstrap CSS
 import '../styles/midcontent.scss';
-import '../styles/footer.scss'
+import '../styles/footer.scss';
+import '../styles/products.scss'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 

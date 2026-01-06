@@ -1,12 +1,56 @@
 .middle-component {
     .upvc-experts {
         background-color: #f9f7f3;
-        padding: 80px 0;
+        padding: 0px 0;
+
+        .safeupvc {
+            width: 100%;
+            background: #f5f4f1;
+            border-bottom: 2px solid #92897a;
+            padding: 8px 0;
+            overflow: hidden;
+
+            .marquee {
+                white-space: nowrap;
+                display: inline-block;
+                animation: scroll-left 60s linear infinite;
+
+                span {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #2b2b2b;
+                    white-space: nowrap;
+                }
+            }
+
+            /* MOBILE VIEW */
+            @media (max-width: 576px) {
+                .marquee {
+                    animation-duration: 55s; // slower on mobile
+                }
+
+                .marquee span {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        /* Animation */
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(50%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
 
         .upvc-container {
             max-width: 1200px;
             margin: auto;
-            padding: 0 20px;
+            padding: 50 20px;
 
             display: grid;
             grid-template-columns: 1.1fr 1fr;
@@ -72,59 +116,50 @@
             }
         }
 
-        /* RIGHT IMAGE */
-        .upvc-image {
-            position: relative;
-            width: 100%;
-            max-width: 500px;
-            height: 400px;
-            overflow: hidden;
-        }
+       /* RIGHT IMAGE FRAME */
+.upvc-image {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 
-        .upvc-image img {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0;
-            animation: fadeImages 9s infinite;
-        }
+  img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: fadeImages 32s infinite;
+  }
 
-        /* Delay for each image */
-        .upvc-image img:nth-child(1) {
-            animation-delay: 0s;
-        }
+  /* Delay for each image (8 images × 4s) */
+  img:nth-child(1) { animation-delay: 0s; }
+  img:nth-child(2) { animation-delay: 4s; }
+  img:nth-child(3) { animation-delay: 8s; }
+  img:nth-child(4) { animation-delay: 12s; }
+  img:nth-child(5) { animation-delay: 16s; }
+  img:nth-child(6) { animation-delay: 20s; }
+  img:nth-child(7) { animation-delay: 24s; }
+  img:nth-child(8) { animation-delay: 28s; }
 
-        .upvc-image img:nth-child(2) {
-            animation-delay: 6s;
-        }
+  &:hover img {
+    animation-play-state: paused; /* pause on hover (nice UX) */
+  }
+}
 
-        .upvc-image img:nth-child(3) {
-            animation-delay: 12s;
-        }
+/* Fade animation */
+@keyframes fadeImages {
+  0%   { opacity: 0; }
+  8%   { opacity: 1; }
+  25%  { opacity: 1; }
+  33%  { opacity: 0; }
+  100% { opacity: 0; }
+}
 
-        @keyframes fadeImages {
-            0% {
-                opacity: 0;
-            }
-
-            10% {
-                opacity: 1;
-            }
-
-            30% {
-                opacity: 1;
-            }
-
-            40% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 0;
-            }
-        }
 
 
         /* RESPONSIVE */
@@ -249,6 +284,10 @@
             font-size: 36px;
             padding: 30px 0px 10px 0px;
             text-align: center;
+
+            @media (max-width: 576px) {
+                font-size: 24px;
+            }
         }
     }
 

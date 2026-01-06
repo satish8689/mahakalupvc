@@ -4,26 +4,52 @@ import Slider from "react-slick";
 
 const indexImgs = [
   {
-    image: "/web-img/kitchen-img-1.jpg",
+    image: "/products/kitchen/1 (19).jpg",
     url: "",
-    title: "Author Services",
+    title: "Modular Kitchen Interior",
   },
   {
-    image: "/web-img/kitchen-img-2.jpg",
+    image: "/products/bed/1 (1).jpg",
     url: "",
-    title: "SleepyHug AirCell Series",
+    title: "Modern Bedroom Design",
   },
   {
-    image: "/web-img/kitchen-img-3.jpg",
+    image: "/products/wardrobe/1 (12).jpg",
     url: "",
-    title: "SleepyHug AirCell Series",
+    title: "Premium Wardrobe Solutions",
   },
    {
-    image: "/web-img/kitchen-img-4.jpg",
+    image: "/products/kitchen/1 (26).jpg",
     url: "",
-    title: "SleepyHug AirCell Series",
-  }
-]
+    title: "Modular Kitchen Interior",
+  },
+   {
+    image: "/products/wardrobe/1 (17).jpg",
+    url: "",
+    title: "Premium Wardrobe Solutions",
+  },
+  {
+    image: "/products/tv-unit/1 (5).jpg",
+    url: "",
+    title: "Stylish TV Unit Interior",
+  },
+   
+   {
+    image: "/products/kitchen/1 (17).jpg",
+    url: "",
+    title: "Modular Kitchen Interior",
+  },
+   {
+    image: "/products/wardrobe/1 (3).jpg",
+    url: "",
+    title: "Premium Wardrobe Solutions",
+  },
+  {
+    image: "/products/tv-unit/1 (2).jpg",
+    url: "",
+    title: "Stylish TV Unit Interior",
+  },
+];
 
 const TMPECard = ({ image, title }) => (
   <div className="index-card">

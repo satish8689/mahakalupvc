@@ -1,7 +1,7 @@
 {
-  "name": "Aaradhya Stationery",
-  "short_name": "Aaradhya Stationery",
-  "start_url": "/products",
+  "name": "Mahakal UPVC",
+  "short_name": "Mahakal UPVC",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#e91e63",

@@ -2,6 +2,13 @@ import { useState } from "react";
 
 const Header = ({ setActiveSection }) => {
   const [isClickOn, setClickOn ] = useState(false)
+  const closeMenu = () => {
+    const menu = document.getElementById("navbarNav");
+    if (menu) {
+      menu.classList.remove("show");
+    }
+  };
+
   return (
     <section className="head-section">
       <header className="container">
@@ -36,18 +43,18 @@ const Header = ({ setActiveSection }) => {
               id="navbarNav"
             >
               <ul className="navbar-nav">
-                <li className="nav-item" onClick={() => setActiveSection("home")}>
+                <li className="nav-item" onClick={() => {setActiveSection("home"); closeMenu()}}>
                   <a className="nav-link active" aria-current="page" href="#">
                     Home
                   </a>
                 </li>
-                <li className="nav-item" onClick={() => setActiveSection("about")}>
+                <li className="nav-item" onClick={() =>  {setActiveSection("about"); closeMenu()}}>
                   <a className="nav-link" href="#">
                     About Us
                   </a>
                 </li>
                
-                <li className="nav-item">
+                <li className="nav-item"  onClick={() =>  {setActiveSection("products"); closeMenu()}}>
                   <a className="nav-link" href="#">
                     Products
                   </a>
@@ -57,7 +64,7 @@ const Header = ({ setActiveSection }) => {
                     Policies
                   </a>
                 </li> */}
-                <li className="nav-item" onClick={() => setActiveSection("contactus")}>
+                <li className="nav-item" onClick={() =>  {setActiveSection("contactus"); closeMenu()}}>
                   <a className="nav-link" href="#">
                     Contact us
                   </a>
