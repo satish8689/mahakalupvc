@@ -125,12 +125,12 @@ const SlideSection = ({ title, products, onProductClick }) => {
       {/* <h1>Indexed In </h1> */}
       <Slider {...settings}>
         {products.map((product, index) => (
-          <TMPECard
+           <a href="/products"> <TMPECard
             key={index}
             image={product.image}
             title={product.title}
             onClick={() => onProductClick && onProductClick(product)}
-          />
+          /> </a>
         ))}
       </Slider>
     </div>

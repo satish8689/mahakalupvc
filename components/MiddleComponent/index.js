@@ -6,13 +6,13 @@ const Content = ({ activeSection }) => {
 
   return (
     <div className="row middle-component">
-      {activeSection === "home" && <div className="upvc-experts">
+       <div className="upvc-experts">
         <div className="safeupvc">
           <div className="marquee">
             <span>
-              🌱 UPVC furniture is resistant to termites and cockroaches, does not get damaged by water, and remains durable for a long time. Compared to wooden furniture, it helps prevent tree cutting, thereby protecting the environment. 🌱
+              🌱 UPVC फर्नीचर में दीमक और कॉकरोच नहीं लगते, यह पानी से खराब नहीं होता और लंबे समय तक टिकाऊ रहता है। लकड़ी के फर्नीचर के मुकाबले यह पेड़ों की कटाई को रोकने में मदद करता है, जिससे पर्यावरण सुरक्षित रहता है। 🌱
               &nbsp;&nbsp;|&nbsp;&nbsp;
-              UPVC फर्नीचर में दीमक और कॉकरोच नहीं लगते, यह पानी से खराब नहीं होता और लंबे समय तक टिकाऊ रहता है। लकड़ी के फर्नीचर के मुकाबले यह पेड़ों की कटाई को रोकने में मदद करता है, जिससे पर्यावरण सुरक्षित रहता है। 🌱
+              UPVC furniture is resistant to termites and cockroaches, does not get damaged by water, and remains durable for a long time. Compared to wooden furniture, it helps prevent tree cutting, thereby protecting the environment. 🌱 
             </span>
           </div>
         </div>
@@ -44,25 +44,25 @@ const Content = ({ activeSection }) => {
 
           {/* RIGHT IMAGE */}
           <div className="upvc-image">
-            <img src="/web-img/1 (1).jpg" alt="UPVC Window" /> 
-            <img src="/web-img/1 (3).jpg" alt="UPVC Slider" /> 
-            <img src="/web-img/1 (4).jpg" alt="UPVC Slider" /> 
-            <img src="/web-img/1 (5).jpg" alt="UPVC Slider" /> 
-            <img src="/web-img/1 (6).jpg" alt="UPVC Slider" /> 
-            <img src="/web-img/1 (7).jpg" alt="UPVC Door" /> 
-            <img src="/web-img/1 (8).jpg" alt="UPVC Door" /> 
-
+            <a href="/products">  <img src="/web-img/1 (1).jpg" alt="UPVC Window" /> </a> 
+            <a href="/products">  <img src="/web-img/1 (3).jpg" alt="UPVC Slider" /> </a> 
+            <a href="/products">  <img src="/web-img/1 (4).jpg" alt="UPVC Slider" />  </a>
+            <a href="/products">  <img src="/web-img/1 (5).jpg" alt="UPVC Slider" />  </a>
+            <a href="/products">  <img src="/web-img/1 (6).jpg" alt="UPVC Slider" />  </a>
+            <a href="/products">  <img src="/web-img/1 (7).jpg" alt="UPVC Door" /> </a>
+             <a href="/products">  <img src="/web-img/1 (8).jpg" alt="UPVC Door" /> </a>
+ 
           </div>
 
         </div>
-      </div>}
+      </div>
 
-      {activeSection === "home" && <div className='explore'>
+       <div className='explore'>
         <div className='explore-product-title'> Explore Our Main Products</div>
         <div className='explore-products'> <ExploreProduct /></div>
-      </div>}
+      </div>
 
-      {activeSection === "home" && <div className="why-choose-mahakal">
+       <div className="why-choose-mahakal">
         <div className="why-container">
 
           <div className="why-header">
@@ -149,9 +149,9 @@ const Content = ({ activeSection }) => {
 
           </div>
         </div>
-      </div>}
+      </div>
 
-      {(activeSection === "home" || activeSection === "features") && <div className="key-features">
+      <div className="key-features">
         <div className="key-features-container">
 
           <div className="section-header">
@@ -227,130 +227,8 @@ const Content = ({ activeSection }) => {
 
           </div>
         </div>
-      </div>}
+      </div>
 
-
-
-      {activeSection === "about" && <div className="about-us">
-        <div className="about-container">
-
-          <div className="about-content">
-            <span className="about-subtitle">ABOUT US</span>
-
-            <h2 className="about-title">
-              Crafting Excellence in <span>UPVC Solutions</span>
-            </h2>
-
-            <p className="about-text">
-              Mahakal is a trusted name in premium UPVC solutions, dedicated to
-              transforming living and working spaces with innovation, durability, and
-              refined design. Our journey is driven by a passion for quality and a
-              commitment to delivering products that stand the test of time.
-            </p>
-
-            <p className="about-text">
-              With a strong focus on modern lifestyles, we combine advanced technology
-              with expert craftsmanship to create UPVC products that are elegant,
-              efficient, and environmentally responsible. Every solution we deliver
-              reflects our attention to detail and customer-first philosophy.
-            </p>
-
-            <div className="about-highlights">
-              <div>
-                <h4>Quality First</h4>
-                <p>Precision engineered products built for long-term performance.</p>
-              </div>
-
-              <div>
-                <h4>Trusted Expertise</h4>
-                <p>Backed by experienced professionals and industry knowledge.</p>
-              </div>
-
-              <div>
-                <h4>Sustainable Vision</h4>
-                <p>Eco-friendly materials supporting a greener tomorrow.</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="about-visual">
-            <div className="visual-box">
-              <span>UPVC</span>
-              <p>Strength • Style • Sustainability</p>
-            </div>
-          </div>
-
-        </div>
-      </div>}
-
-
-      {activeSection === "contactus" && <div className="contact-us">
-        <div className="contact-container">
-
-          <div className="contact-header">
-            <span className="contact-subtitle">CONTACT US</span>
-            <h2 className="contact-title">
-              Get in Touch With <span>Mahakal UPVC</span>
-            </h2>
-            <p className="contact-description">
-              We’re here to assist you with all your UPVC requirements. Reach out to us
-              for product inquiries, expert guidance, or business collaborations.
-            </p>
-          </div>
-
-          <div className="contact-content">
-
-            <div className="contact-info">
-              <div className="info-item">
-                <h4>Our Location</h4>
-                <p>
-                  P-110, Kalindi Gold City, Bhangiya<br />
-                  Indore – 452001, Madhya Pradesh
-                </p>
-                <a
-                  href="https://www.google.com/maps/dir/Indore,+Madhya+Pradesh/22.7922745,75.8621953/@22.7923545,75.8619538,19z/data=!4m9!4m8!1m5!1m1!1s0x3962fcad1b410ddb:0x96ec4da356240f4!2m2!1d75.8577258!2d22.7195687!1m0!3e0?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ color: "#454141ff", textDecoration: "none", fontWeight: "600" }}
-                >
-                  📍 Get Directions
-                  <br />
-                </a>
-              </div>
-
-              <div className="info-item">
-                <h4>Email Address</h4>
-                <p>
-                  <a href="mailto:mahakalupvc@gmail.com">
-                    mahakalupvc@gmail.com
-                  </a>
-                </p>
-              </div>
-
-              <div className="info-item">
-                <h4>Contact Number</h4>
-                <p>
-                  <a href="tel:+919067446328">
-                    +91 90674 46328
-                  </a>
-                  <a href="tel:+919752929902">+91 9752929902</a>
-                </p>
-              </div>
-            </div>
-
-            <div className="contact-cta">
-              <h3>Let’s Build Something Exceptional</h3>
-              <p>
-                Connect with our team to explore premium UPVC solutions designed for
-                durability, style, and long-term value.
-              </p>
-            </div>
-
-          </div>
-        </div>
-      </div>}
-
-      {activeSection ==="products" && <Products/>}
 
     </div>
   );

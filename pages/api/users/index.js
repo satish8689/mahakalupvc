@@ -54,7 +54,7 @@ export default async function handler(req, res) {
       req.method === 'POST' &&
       req.headers['content-type']?.includes('multipart/form-data')
     ) {
-      const uploadDir = path.join(process.cwd(), 'public', 'stationery-img');
+      const uploadDir = path.join(process.cwd(), 'public', 'mahakal-upvc');
       if (!fs.existsSync(uploadDir)) {
         fs.mkdirSync(uploadDir, { recursive: true });
       }
@@ -72,7 +72,7 @@ export default async function handler(req, res) {
         }
 
         const fileName = path.basename(file.filepath);
-        const filePath = `/stationery-img/${fileName}`;
+        const filePath = `/mahakal-upvc/${fileName}`;
         return res.status(200).json({ filePath });
       });
 
@@ -83,6 +83,7 @@ export default async function handler(req, res) {
       req.method === 'POST' &&
       req.headers['content-type']?.includes('application/json')
     ) {
+        
       const buffers = [];
       for await (const chunk of req) buffers.push(chunk);
       const body = Buffer.concat(buffers).toString();
@@ -90,6 +91,7 @@ export default async function handler(req, res) {
       newItem.id = Date.now().toString();
 
       const updatedItems = [...items, newItem];
+      console.log("updatedItems", updatedItems)
       await writeFileToGitHub(updatedItems, 'Add item', sha);
 
       return res.status(201).json({ message: 'Item added', item: newItem });

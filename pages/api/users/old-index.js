@@ -12,7 +12,7 @@ export const config = {
 const octokit = new Octokit({ auth: process.env.NEXT_PUBLIC_GITHUB_TOKEN });
 
 const [owner, repo] = process.env.NEXT_PUBLIC_GITHUB_REPO.split('/');
-const filePath = process.env.NEXT_PUBLIC_GITHUB_FILE_PATH+'/order.json';
+const filePath = process.env.NEXT_PUBLIC_GITHUB_FILE_PATH+'/user.json';
 const branch = process.env.NEXT_PUBLIC_GITHUB_BRANCH || 'main';
 
 async function fetchFileFromGitHub() {

@@ -44,18 +44,18 @@ const Header = ({ setActiveSection }) => {
             >
               <ul className="navbar-nav">
                 <li className="nav-item" onClick={() => {setActiveSection("home"); closeMenu()}}>
-                  <a className="nav-link active" aria-current="page" href="#">
+                  <a className="nav-link active" aria-current="page" href="/">
                     Home
                   </a>
                 </li>
                 <li className="nav-item" onClick={() =>  {setActiveSection("about"); closeMenu()}}>
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="/about-us">
                     About Us
                   </a>
                 </li>
                
                 <li className="nav-item"  onClick={() =>  {setActiveSection("products"); closeMenu()}}>
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="/products">
                     Products
                   </a>
                 </li>
@@ -65,7 +65,7 @@ const Header = ({ setActiveSection }) => {
                   </a>
                 </li> */}
                 <li className="nav-item" onClick={() =>  {setActiveSection("contactus"); closeMenu()}}>
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="/contact-us">
                     Contact us
                   </a>
                 </li>

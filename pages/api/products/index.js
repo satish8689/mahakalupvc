@@ -8,7 +8,7 @@ export const config = {
     bodyParser: false,
   },
 };
-
+console.log("process.env.NEXT_PUBLIC_GITHUB_TOKEN", process.env.NEXT_PUBLIC_GITHUB_TOKEN)
 const octokit = new Octokit({ auth: process.env.NEXT_PUBLIC_GITHUB_TOKEN });
 
 const [owner, repo] = process.env.NEXT_PUBLIC_GITHUB_REPO.split('/');
