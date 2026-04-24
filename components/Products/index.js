@@ -24,14 +24,14 @@ const generateCategory = (category, folder, count) =>
 
 const productsData = [
   ...generateCategory("Bed", "bed", 9),
-  ...generateCategory("Kitchen", "kitchen", 34),
-  ...generateCategory("Wardrobe", "wardrobe", 26),
+  ...generateCategory("Kitchen", "kitchen", 38),
+  ...generateCategory("Wardrobe", "wardrobe", 32),
   ...generateCategory("Tv Unit", "tv-unit", 29),
   ...generateCategory("Ceiling Interior", "ceiling-interior", 5),
   ...generateCategory("Stair Railing", "stair-railing", 8),
   ...generateCategory("Temple", "temple", 1),
   ...generateCategory("Sofa", "sofa", 2),
-  ...generateCategory("Other", "other", 16),
+  ...generateCategory("Other", "other", 19),
 ];
 
 export default function Products() {
